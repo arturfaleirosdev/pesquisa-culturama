@@ -15,7 +15,7 @@
         
         <form action="" method="get">
 
-            <!-- <fieldset>
+
             <legend>Dados Pessoais</legend>
                 <label for="userName">Nome</label>
             <input type="text" name="userName" required>
@@ -65,9 +65,6 @@
                 <label for="maritalStatus">Estado civil</label>
                 <select id="maritalStatus" name="maritalStatus">
 
-                    >
-
-                    
                     <option value="notInformed">Selecione...</option>
                     <option value="casado">Casado</option>
                     <option value="solteiro">Solteiro</option>
@@ -110,7 +107,7 @@
                     <label for="city">Cidade</label>
                     <input id="city" type="text" autocomplete="address-level4" placeholder="Salvador">
                 
-            </fieldset>-->
+            </fieldset>
 
             <fieldset>
                 <legend>Hábitos</legend>
@@ -136,7 +133,28 @@
                 <label for="favoriteColor">Cor favorita</label>
                 <input type="color" name="userFavoriteColor" id="favoriteColor">
             </fieldset>
+            <fieldset>
+                <legend>Opinião</legend>
+                <p>O que você acha da qualidade do nosso serviço?</p>
+                
+                <input type="radio" id="otimo" name="userServiceOpinion" value="otima">
+                <label for="otimo">Ótima</label><br>
+
+                <input type="radio" id="boa" name="userServiceOpinion" value="boa">
+                <label for="boa">Boa</label><br>
+
+                <input type="radio" id="regular" name="userServiceOpinion" value="regular">
+                <label for="regular">Regular</label><br>
+
+                <input type="radio" id="ruim" name="userServiceOpinion" value="ruim">
+                <label for="ruim">Ruim</label><br>
+
+                <label for="comment">Escreva sua opinião:</label>
+                <textarea id="comment" name="userComment" placeholder="Digite aqui sua opinião..."></textarea>
+
+            </fieldset>
              <button type="submit">Enviar </button>
+            </fieldset>
         </form>
     </section>
 </body>
