@@ -50,6 +50,17 @@ label {
     display: inline-block;
     margin-bottom: 5px;
 }
+
+input[type="tel"], 
+input[type="file"] {
+    margin-bottom: 0px;
+}
+
+small {
+    display: inline-block ;
+    margin-bottom:20px ;
+}
+
 input, select, textarea {
     width: 100%;
     padding: 10px;
@@ -105,3 +116,4 @@ button[type="reset"]:hover{
     background-color: red;
     color: white;
 }
+
