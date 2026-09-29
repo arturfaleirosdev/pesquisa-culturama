@@ -35,7 +35,7 @@
                     <input id="email" type="email" name="email" required>
 
                     <label for="phoneNumber">Telefone</label>
-                    <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9{11}]" placeholder="DDD + número sem espaços" aria-describedby="phoneHelp">
+                    <input id="phoneNumber" type="tel" name="userPhoneNumber" pattern="[0-9]{11}" placeholder="DDD + número sem espaços" aria-describedby="phoneHelp">
                     <small id="phoneHelp">Preencha com 11 dígitos no formato: DDD + número sem espaços ou hífen</small>
 
                     <label for="image">Upload de Foto</label>
@@ -98,7 +98,7 @@
                     </select>
 
                     <label for="city">Cidade</label>
-                    <input id="city" type="text" autocomplete="address-level4" placeholder="Salvador">
+                    <input id="city" type="text" name="userCity" autocomplete="address-level4" placeholder="Salvador">
                 </fieldset>
 
                 <fieldset>
@@ -157,12 +157,10 @@
                     <input id="getResult" type="checkbox" name="userGetResult" value="accepted">
                     <label for="getResult">Desejo receber o resultado por email</label>
                 </fieldset>
-            </form>
-            
-            <button type="submit" aria-label="Enviar dados do formulário">Enviar</button>
-            <button type="reset" aria-label="Limpa todos os dados do formulário>Limpar</button>
 
-            
+                <button type="submit" aria-label="Enviar dados do formulário">Enviar</button>
+                <button type="reset" aria-label="Limpa todos os dados do formulário">Limpar</button>
+            </form>
         </section>
     </main>
 </body>
